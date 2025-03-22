@@ -4,7 +4,7 @@
     <div class="container">
         <!-- Header Section -->
         <div class="header">
-            <div class="header-content">
+            <div class="header-content" id="home">
                 <p class="greeting">Olá! 👋</p>
                 <h1 class="name">Sou Mateus, <span class="title">Designer editorial e Desenvolvedor PHP com mais de <br> 5
                         anos de experiência.</span></h1>
@@ -22,7 +22,7 @@
         </div>
 
         <!-- About Me Section -->
-        <div class="about-section">
+        <div class="about-section" id="about">
             <div class="about-header">
                 <div class="about-title">
                     <h2>Sobre <span class="text-highlight">Mim</span></h2>
@@ -44,17 +44,16 @@
                                 <span class="terminal-btn minimize"></span>
                                 <span class="terminal-btn maximize"></span>
                             </div>
-                            <div class="terminal-title">mateus@portfolio:~</div>
+                            <div class="terminal-title">mateus@sobremim:~</div>
                         </div>
                         <div class="terminal-body">
                             <p><span class="terminal-prompt">$</span> <span class="command">cat sobre-mim.txt</span></p>
                             <div class="command-output">
-                                <p>Olá! Sou um profissional que transita entre o design editorial e o desenvolvimento web.</p>
-                                <p>Com mais de 5 anos de experiência na diagramação de jornais impressos e desenvolvimento de 
-                                sistemas web, trago uma perspectiva única que combina estética e funcionalidade.</p>
-                                <p>Atualmente trabalho como líder de tecnologia, onde aplico meus conhecimentos em design
-                                para criar interfaces intuitivas, enquanto utilizo minhas habilidades de programação
-                                para implementar soluções robustas e escaláveis.</p>
+                                <p>Olá! Sou um profissional de design editorial e o desenvolvimento web.</p>
+                                <p>Com mais de 5 anos de experiência na diagramação de jornais impressos no Diário da Manhã, tenho alguns projetos pessoais de
+                                desenvolvimento de sistemas web, como o DM Acervo.</p>
+                                <p>Atualmente atuo como líder de tecnologia no Grupo B2, um grupo composto por 7 empresas, 
+                                onde aplico meus conhecimentos em desenvolvimento para gerir uma equipe de desenvolvedores, suporte e comercial.</p>
                             </div>
                             <p><span class="terminal-prompt">$</span> <span class="command blink">_</span></p>
                         </div>
@@ -68,10 +67,10 @@
                             <div class="skill-item">
                                 <div class="skill-info">
                                     <span>InDesign</span>
-                                    <span>95%</span>
+                                    <span>100%</span>
                                 </div>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 95%"></div>
+                                    <div class="skill-progress" style="width: 100%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -99,10 +98,10 @@
                             <div class="skill-item">
                                 <div class="skill-info">
                                     <span>PHP</span>
-                                    <span>75%</span>
+                                    <span>60%</span>
                                 </div>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 75%"></div>
+                                    <div class="skill-progress" style="width: 60%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -117,10 +116,10 @@
                             <div class="skill-item">
                                 <div class="skill-info">
                                     <span>MySQL</span>
-                                    <span>65%</span>
+                                    <span>50%</span>
                                 </div>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 65%"></div>
+                                    <div class="skill-progress" style="width: 50%"></div>
                                 </div>
                             </div>
                         </div>
@@ -131,16 +130,16 @@
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <div class="timeline-date">2023 - Atual</div>
+                            <div class="timeline-date">2021 - Atual</div>
                             <div class="timeline-content">
                                 <h3>Líder de Tecnologia</h3>
-                                <p>B2 Agência</p>
-                                <p>Liderança de equipe de desenvolvimento, arquitetura de sistemas e implementação de soluções tecnológicas.</p>
+                                <p>Grupo B2</p>
+                                <p>Liderança de equipe de desenvolvimento, suporte e comercial de dois sistemas web.</p>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <div class="timeline-date">2018 - 2023</div>
+                            <div class="timeline-date">2019 - Atual</div>
                             <div class="timeline-content">
                                 <h3>Designer Editorial</h3>
                                 <p>Diário da Manhã</p>
@@ -149,11 +148,11 @@
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <div class="timeline-date">2019 - 2023</div>
+                            <div class="timeline-date">2019 - Atual</div>
                             <div class="timeline-content">
                                 <h3>Desenvolvedor Web</h3>
                                 <p>Diário da Manhã</p>
-                                <p>Desenvolvimento e manutenção do portal de notícias e sistema de acervo digital.</p>
+                                <p>Desenvolvimento e manutenção do acervo digital do Jornal Diário da Manhã.</p>
                             </div>
                         </div>
                     </div>
@@ -162,11 +161,11 @@
         </div>
 
         <!-- Portfolio Grid -->
-        <div class="portfolio-grid">
+        <div class="portfolio-grid" id="projects">
             <!-- Projeto 1 - Design Editorial -->
             <div class="project">
                 <div class="project-info">
-                    <h3 class="project-title">Diagramação de Jornal impresso diário</h3>
+                    <h3 class="project-title">Diagramação de Jornal Impresso</h3>
                     <p class="project-description">Nos últimos 5 anos, trabalhei com o <a href="https://dmacervo.com.br/"
                             target="_blank">Diário da Manhã</a> no layout e tipografia de um jornal tradicional, com foco em
                         melhorar a legibilidade e experiência de leitura.</p>
@@ -222,7 +221,7 @@
             <div class="project">
                 <div class="project-info">
                     <h3 class="project-title">Projeto de site acervo</h3>
-                    <p class="project-description">Acervo de edições de jornais impressos e digitais.</p>
+                    <p class="project-description">Sistema web desenvolvido em Laravel para gerenciamento de acervo digital de jornais. Conta com CMS para upload de edições e editais, sistema de permissões de usuário, busca avançada e visualização otimizada dos documentos.</p>
                     <a href="{{ url('https://dmacervo.com.br/') }}" class="case-study-link" target="_blank">DM Acervo</a>
                 </div>
                 <div class="project-image design-project">
@@ -233,20 +232,20 @@
             <!-- Projeto 4 - Desenvolvimento Web -->
             <div class="project">
                 <div class="project-info">
-                    <h3 class="project-title">Portal de Notícias</h3>
-                    <p class="project-description">Gestão editorial e anunciantes de um portal de notícias com mais de 2 milhões de acessos por mês.</p>
-                    <a href="{{ url('https://www.dm.com.br') }}" class="case-study-link">Ver Projeto</a>
+                    <h3 class="project-title">Assistente Virtual WhatsApp</h3>
+                    <p class="project-description">Assistente virtual inteligente para WhatsApp utilizando OpenAI, Flash, Whisper e ElevenLabs. O sistema processa aprende com as interações e fornece respostas naturais tanto em texto quanto em áudio.</p>
+                    <a href="https://wa.me/5547997113049" class="case-study-link">Converse com a IA!</a>
                 </div>
                 <div class="project-image code-project">
                     <div class="browser-mockup">
-                        <img src="{{ asset('images/dmonline.png') }}" alt="Portal de Notícias">
+                        <img src="{{ asset('images/wpp.png') }}" alt="Assistente Virtual WhatsApp">
                     </div>
                 </div>
             </div>
         </div>        
 
         <!-- CTA Section -->
-        <div class="cta-section">
+        <div class="cta-section" id="contact">
             <h2 class="cta-title">Vamos trabalhar juntos no seu próximo projeto?</h2>
             <div class="whatsapp-button">
                 <a href="https://wa.me/5562992125425?text=Olá%20Mateus,%20encontrei%20você%20pelo%20seu%20site%20portfólio,%20vamos%20conversar?" class="btn btn-whatsapp">
