@@ -46,4 +46,4 @@ php artisan serve
 
 ## Contato
 
-[Seu Nome] - [seu-email@exemplo.com]
+MATEUS PUREZA CARDOSO - mapureza@gmail.com
