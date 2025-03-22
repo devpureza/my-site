@@ -1,0 +1,590 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.greeting {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-weight: 400;
+    color: #666666;
+}
+
+.status {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+.status-highlight {
+    font-weight: 500;
+    color: #444444;
+}
+
+.profile-image {
+    margin-left: 2rem;
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info {
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.project-description {
+    font-size: 0.875rem;
+    color: #666666;
+    margin-bottom: 0.25rem;
+}
+
+.case-study-link {
+    font-size: 0.875rem;
+    color: #999999;
+}
+
+.case-study-link:hover {
+    text-decoration: underline;
+}
+
+.project-image {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-image img {
+    max-height: 500px;
+    border-radius: 12px;
+}
+
+/* Code Project Styles */
+.code-project {
+    background: #1e1e1e;
+}
+
+.code-preview {
+    padding: 20px;
+    overflow: auto;
+}
+
+.code-preview pre {
+    margin: 0;
+}
+
+.code-preview code {
+    font-family: 'Fira Code', monospace;
+    color: #f8f8f2;
+    font-size: 14px;
+}
+
+.browser-mockup {
+    width: 100%;
+    position: relative;
+    padding-top: 32px;
+    border-radius: 8px;
+    background: #f0f0f0;
+    overflow: hidden;
+}
+
+.browser-mockup::before {
+    content: '•••';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background: #e0e0e0;
+    color: #999;
+    font-size: 25px;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+/* Whatsapp Button */
+.whatsapp-button {
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    color: white;
+}
+.btn-whatsapp i {
+    margin-right: 8px;
+}
+
+/* CTA Section */
+.cta-section {
+    margin-bottom: 4rem;
+}
+
+.cta-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.cta-email {
+    font-size: 1.25rem;
+    color: #666666;
+}
+
+.cta-email:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid #e9e9e9;
+    font-size: 0.875rem;
+    color: #999999;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: #999999;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    color: #444444;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .name {
+        font-size: 2.25rem;
+    }
+    
+    .cta-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+    }
+    
+    .profile-image {
+        margin-left: 0;
+        margin-top: 1.5rem;
+        align-self: flex-start;
+    }
+    
+    .site-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .social-links {
+        margin-top: 1rem;
+    }
+}
+
+/* About Section Styles */
+.about-section {
+    margin-bottom: 5rem;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.about-title {
+    position: relative;
+}
+
+.about-title h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.text-highlight {
+    color: #0066ff;
+}
+
+.terminal-line {
+    height: 2px;
+    width: 60px;
+    background: linear-gradient(90deg, #0066ff, transparent);
+    margin-top: 8px;
+}
+
+.about-tabs {
+    display: flex;
+    gap: 1rem;
+}
+
+.tab-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    background: #f0f0f0;
+}
+
+.tab-btn.active {
+    background: #0066ff;
+    color: white;
+    border-color: #0066ff;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Terminal styles */
+.terminal-window {
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.terminal-header {
+    background: #323232;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.terminal-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.terminal-btn.close {
+    background: #ff5f56;
+}
+
+.terminal-btn.minimize {
+    background: #ffbd2e;
+}
+
+.terminal-btn.maximize {
+    background: #27c93f;
+}
+
+.terminal-title {
+    color: #aaa;
+    font-size: 0.75rem;
+    font-family: monospace;
+}
+
+.terminal-body {
+    padding: 1.5rem;
+    color: #f0f0f0;
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.terminal-prompt {
+    color: #5af78e;
+    margin-right: 0.5rem;
+}
+
+.command {
+    color: #f0f0f0;
+}
+
+.command-output {
+    padding: 1rem 0;
+    color: #ddd;
+}
+
+.command-output p {
+    margin-bottom: 0.5rem;
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Skills styles */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.skill-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #0066ff;
+}
+
+.skill-item {
+    margin-bottom: 1.2rem;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.skill-bar {
+    height: 6px;
+    background: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #0066ff, #00a2ff);
+    border-radius: 3px;
+    position: relative;
+    width: 0;
+    animation: progressAnimation 1.5s ease-in-out forwards;
+}
+
+@keyframes progressAnimation {
+    0% { width: 0; }
+}
+
+/* Timeline styles */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #ddd;
+}
+
+.timeline-item {
+    padding: 0 0 2rem 3rem;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background: #0066ff;
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.timeline-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsiveness for About section */
+@media (max-width: 767px) {
+    .about-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .about-tabs {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    .tab-btn {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+} 
