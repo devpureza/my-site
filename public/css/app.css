@@ -91,6 +91,8 @@ img {
 .project {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    overflow: hidden;
 }
 
 .project-info {
@@ -124,31 +126,47 @@ img {
     border-radius: 12px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 200px; /* Altura mínima para evitar colapso */
 }
 
 .project-image img {
     max-height: 500px;
     border-radius: 12px;
+    object-fit: contain;
 }
 
 /* Code Project Styles */
 .code-project {
     background: #1e1e1e;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .code-preview {
     padding: 20px;
     overflow: auto;
+    width: 100%;
+    max-width: 100%;
 }
 
 .code-preview pre {
     margin: 0;
+    white-space: pre;
+    overflow-x: auto;
+    padding-right: 20px; /* Espaço extra à direita para scrolling */
 }
 
 .code-preview code {
     font-family: 'Fira Code', monospace;
     color: #f8f8f2;
     font-size: 14px;
+    display: inline-block;
+    min-width: 100%;
+    tab-size: 2;
+    -moz-tab-size: 2;
 }
 
 .browser-mockup {
@@ -268,6 +286,39 @@ img {
         margin-left: 0;
         margin-top: 1.5rem;
         align-self: flex-start;
+    }
+    
+    /* Centralização das imagens do portfólio em telas pequenas */
+    .project-image {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .project-image img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .code-project, .browser-mockup {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Ajustes específicos para o código em telas pequenas */
+    .code-preview {
+        max-height: 300px;
+        padding: 12px;
+    }
+    
+    .code-preview pre {
+        white-space: pre;
+        overflow-x: auto;
+    }
+    
+    .code-preview code {
+        font-size: 12px;
     }
     
     .site-footer {

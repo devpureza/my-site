@@ -190,29 +190,26 @@
                 </div>
                 <div class="project-image code-project">
                     <div class="code-preview">
-                        <pre><code>
+                        <pre><code><span style="color: #FF69B4">class</span> <span style="color: #4169E1">Developer</span> {
+    <span style="color: #32CD32">private</span> <span style="color: #FFA500">$technicalSkills</span> = [
+        <span style="color: #9370DB">'PHP'</span> => <span style="color: #9370DB">'Intermediário'</span>,
+        <span style="color: #9370DB">'Laravel'</span> => <span style="color: #9370DB">'Intermediário'</span>,
+        <span style="color: #9370DB">'MySQL'</span> => <span style="color: #9370DB">'Básico'</span>,
+        <span style="color: #9370DB">'Git'</span> => <span style="color: #9370DB">'Básico'</span>,
+        <span style="color: #9370DB">'Indesign'</span> => <span style="color: #9370DB">'Avançado'</span>,
+        <span style="color: #9370DB">'Photoshop'</span> => <span style="color: #9370DB">'Avançado'</span>
+    ];
 
-                <span style="color: #FF69B4">class</span> <span style="color: #4169E1">Developer</span> {
-                    <span style="color: #32CD32">private</span> <span style="color: #FFA500">$technicalSkills</span> = [
-                        <span style="color: #9370DB">'PHP'</span> => <span style="color: #9370DB">'Intermediário'</span>,
-                        <span style="color: #9370DB">'Laravel'</span> => <span style="color: #9370DB">'Intermediário'</span>,
-                        <span style="color: #9370DB">'MySQL'</span> => <span style="color: #9370DB">'Básico'</span>,
-                        <span style="color: #9370DB">'Git'</span> => <span style="color: #9370DB">'Básico'</span>
-                        <span style="color: #9370DB">'Indesign'</span> => <span style="color: #9370DB">'Avançado'</span>
-                        <span style="color: #9370DB">'Photoshop'</span> => <span style="color: #9370DB">'Avançado'</span>
-                    ];
-                    <span style="color: #32CD32">private</span> <span style="color: #FFA500">$softSkills</span> = [
-                        <span style="color: #9370DB">'Liderança'</span> => <span style="color: #9370DB">'Em aprendizado'</span>,
-                        <span style="color: #9370DB">'Comunicação'</span> => <span style="color: #9370DB">'Excelente'</span>,
-                        <span style="color: #9370DB">'Resolução de problemas'</span> => <span style="color: #9370DB">'Excelente'</span>
-                    ];
+    <span style="color: #32CD32">private</span> <span style="color: #FFA500">$softSkills</span> = [
+        <span style="color: #9370DB">'Liderança'</span> => <span style="color: #9370DB">'Em aprendizado'</span>,
+        <span style="color: #9370DB">'Comunicação'</span> => <span style="color: #9370DB">'Excelente'</span>,
+        <span style="color: #9370DB">'Resolução'</span> => <span style="color: #9370DB">'Excelente'</span>
+    ];
 
-                    <span style="color: #32CD32">public</span> <span style="color: #4169E1">function</span> <span style="color: #FFA500">lead</span>(<span style="color: #FFA500">$team</span>) {
-                        <span style="color: #FF69B4">return</span> <span style="color: #9370DB">'Diagramador e Desenvolvedor'</span>;
-                    }
-                }
-
-                                    </code></pre>
+    <span style="color: #32CD32">public</span> <span style="color: #4169E1">function</span> <span style="color: #FFA500">lead</span>(<span style="color: #FFA500">$team</span>) {
+        <span style="color: #FF69B4">return</span> <span style="color: #9370DB">'Diagramador e Desenvolvedor'</span>;
+    }
+}</code></pre>
                     </div>
                 </div>
             </div>
