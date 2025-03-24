@@ -217,7 +217,7 @@
             <!-- Projeto 3 - Design Editorial -->
             <div class="project">
                 <div class="project-info">
-                    <h3 class="project-title">Projeto de site acervo</h3>
+                    <h3 class="project-title">Projeto de site acervo de notícias</h3>
                     <p class="project-description">Sistema web desenvolvido em Laravel para gerenciamento de acervo digital de jornais. Conta com CMS para upload de edições e editais, sistema de permissões de usuário, busca avançada e visualização otimizada dos documentos.</p>
                     <a href="{{ url('https://dmacervo.com.br/') }}" class="case-study-link" target="_blank">DM Acervo</a>
                 </div>
