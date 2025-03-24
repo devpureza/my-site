@@ -229,7 +229,7 @@
             <!-- Projeto 4 - Desenvolvimento Web -->
             <div class="project">
                 <div class="project-info">
-                    <h3 class="project-title">Assistente Virtual WhatsApp</h3>
+                    <h3 class="project-title">Assistente virtual WhatsApp</h3>
                     <p class="project-description">Assistente virtual inteligente para WhatsApp utilizando OpenAI, Flash, Whisper e ElevenLabs. O sistema processa aprende com as interações e fornece respostas naturais tanto em texto quanto em áudio.</p>
                     <a href="https://wa.me/5547997113049" class="case-study-link">Converse com a IA!</a>
                 </div>
