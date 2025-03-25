@@ -12,7 +12,7 @@ Este portfólio foi criado para apresentar meus projetos, habilidades e experiê
 - PHP
 - HTML/CSS
 - JavaScript
-- MySQL
+- Postgress
 
 ## Funcionalidades Planejadas
 
