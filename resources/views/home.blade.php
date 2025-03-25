@@ -165,7 +165,7 @@
             <!-- Projeto 1 - Design Editorial -->
             <div class="project">
                 <div class="project-info">
-                    <h3 class="project-title">Diagramação de jornal impresso</h3>
+                    <h3 class="project-title">Diagramação de Jornal Impresso</h3>
                     <p class="project-description">Nos últimos 5 anos, trabalhei com o <a href="https://dmacervo.com.br/"
                             target="_blank">Diário da Manhã</a> no layout e tipografia de um jornal tradicional, com foco em
                         melhorar a legibilidade e experiência de leitura.</p>
