@@ -1,6 +1,6 @@
 # Meu Portfólio
 
-Este é um site desenvolvido em Laravel para servir como meu portfólio profissional.
+Este é um site desenvolvido em Laravel para servir como meu portfólio profissional!
 
 ## Sobre o Projeto
 
