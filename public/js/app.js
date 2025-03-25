@@ -35,70 +35,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Contact form enhancements
+    // Formulário de contato simplificado
     const contactForm = document.querySelector('.contact-form form');
     if (contactForm) {
-        // Adiciona efeito de foco nos campos
-        const formInputs = contactForm.querySelectorAll('input, textarea');
-        formInputs.forEach(input => {
-            // Animação ao focar no campo
-            input.addEventListener('focus', function() {
-                this.parentElement.classList.add('focused');
-            });
-            
-            // Remoção da animação ao perder o foco
-            input.addEventListener('blur', function() {
-                if (this.value === '') {
-                    this.parentElement.classList.remove('focused');
-                }
-            });
-        });
-
-        // Validação básica do formulário
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            let isValid = true;
-            const formInputs = this.querySelectorAll('input, textarea');
+            // Desabilita o botão e mostra indicador de envio
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
             
-            formInputs.forEach(input => {
-                if (input.value.trim() === '') {
-                    isValid = false;
-                    input.classList.add('error');
-                    
-                    // Remove a classe de erro após algum tempo
-                    setTimeout(() => {
-                        input.classList.remove('error');
-                    }, 3000);
-                }
-            });
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            submitBtn.disabled = true;
             
-            if (isValid) {
-                // Aqui você pode adicionar o código para enviar o formulário
-                // Por exemplo, usando fetch API
+            // Simula envio (substitua por seu código de envio real)
+            setTimeout(() => {
+                // Mostra mensagem de sucesso
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Enviado!';
+                submitBtn.style.backgroundColor = '#27ae60';
                 
-                // Simulação de envio bem-sucedido
-                const submitBtn = this.querySelector('.submit-btn');
-                const originalText = submitBtn.innerHTML;
+                // Limpa o formulário
+                this.reset();
                 
-                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-                submitBtn.disabled = true;
-                
+                // Restaura o botão após 3 segundos
                 setTimeout(() => {
-                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Enviado!';
-                    submitBtn.style.backgroundColor = '#27ae60';
-                    
-                    // Limpa o formulário
-                    this.reset();
-                    
-                    // Restaura o botão após alguns segundos
-                    setTimeout(() => {
-                        submitBtn.innerHTML = originalText;
-                        submitBtn.disabled = false;
-                        submitBtn.style.backgroundColor = '';
-                    }, 3000);
-                }, 2000);
-            }
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.backgroundColor = '';
+                }, 3000);
+            }, 1500);
         });
     }
 }); 
