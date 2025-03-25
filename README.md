@@ -14,7 +14,7 @@ Este portfólio foi criado para apresentar meus projetos, habilidades e experiê
 - JavaScript
 - Postgress
 
-## Funcionalidades Planejadas
+## Funcionalidades Planejadas!!
 
 - Página inicial com apresentação pessoal
 - Seção de projetos com descrições e links
